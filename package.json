@@ -1,0 +1,34 @@
+{
+  "name": "modverse",
+  "version": "1.0.0",
+  "description": "ModVerse - an open-source, moddable Android sandbox game built on a custom HTML5/WebGL engine, packaged with Capacitor.",
+  "main": "server/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "cap:add:android": "npx cap add android",
+    "cap:sync": "npx cap sync android",
+    "cap:open": "npx cap open android",
+    "build:android": "npm run cap:sync && npx cap open android"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/cli": "^6.1.2",
+    "@capacitor/core": "^6.1.2",
+    "@capacitor/push-notifications": "^6.0.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

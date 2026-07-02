@@ -1,0 +1,23 @@
+{
+  "appId": "com.modverse.game",
+  "appName": "ModVerse",
+  "webDir": "public",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https",
+    "cleartext": true
+  },
+  "android": {
+    "allowMixedContent": true,
+    "backgroundColor": "#0b0e14"
+  },
+  "plugins": {
+    "PushNotifications": {
+      "presentationOptions": ["badge", "sound", "alert"]
+    },
+    "SplashScreen": {
+      "launchShowDuration": 800,
+      "backgroundColor": "#0b0e14"
+    }
+  }
+}
